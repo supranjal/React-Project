@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Layout from './components/layout/Layout';
 import NotFound from './pages/NotFound';
 import Contact from './pages/Contact';
+import Counter from './pages/Counter';
 const MyRoutes = () => {
   return (
     <BrowserRouter>
@@ -14,6 +15,7 @@ const MyRoutes = () => {
         <Route path='about' element={<About/>}/>
         <Route path='contact' element={<Contact/>}/>
         <Route path='*' element={<NotFound/>}/>
+        <Route path='counter' element={<Counter/>}/>
       </Route>
         
     </Routes>
