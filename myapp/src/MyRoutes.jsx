@@ -6,21 +6,28 @@ import Layout from './components/layout/Layout';
 import NotFound from './pages/NotFound';
 import Contact from './pages/Contact';
 import Counter from './pages/Counter';
+import Room from './pages/Room';
+import DataFetch from './pages/DataFetch';
+import Product from './pages/Product';
+import ReduxCounter from './redux/ReduxCounter';
 const MyRoutes = () => {
   return (
     <BrowserRouter>
-    <Routes>
-      <Route path='/' element={<Layout/>}>
-        <Route index element={<Home/>}/>
-        <Route path='about' element={<About/>}/>
-        <Route path='contact' element={<Contact/>}/>
-        <Route path='*' element={<NotFound/>}/>
-        <Route path='counter' element={<Counter/>}/>
-      </Route>
-        
-    </Routes>
+      <Routes>
+        <Route path='/' element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/counter' element={<Counter />} />
+          <Route path='/room' element={<Room />} />
+          <Route path='/datafetch' element={<DataFetch />} />
+          <Route path='/product/:id' element={<Product />} />
+          <Route path='/rcounter' element={<ReduxCounter/>}/>
+          <Route path='*' element={<NotFound />} />
+        </Route>
+      </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
 export default MyRoutes

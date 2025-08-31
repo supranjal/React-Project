@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+.light_btn{
+    @apply bg-amber-400 px-4 py-2;
+    @apply hover:bg-amber-300;
+    @apply active:bg-amber-500 active:shadow-2xl;
+}
+
+.dark_btn{
+    @apply bg-blue-400 px-4 py-2;
+    @apply hover:bg-blue-300;
+    @apply active:bg-blue-500 active:shadow-2xl;
+}
+/* its like applying the css using tailwind class like apply is used to apply the css property in the respective class */

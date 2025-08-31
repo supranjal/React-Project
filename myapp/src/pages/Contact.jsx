@@ -1,8 +1,13 @@
 import { Button, Grid, TextField, Typography } from "@mui/material"
+import { useContext } from "react"
+import { MyThemeContext } from "../App"
+import "../App.css"
 
 const Contact = () => {
+  let theme = useContext(MyThemeContext)
   return (
     <>
+    <button className={`${theme}_btn`}>Testing</button>
       <Grid container width={'80%'} margin={'auto'} marginY={5}>
         <Grid size={{xs: 12, md: 6}} bgcolor={'success.light'}>
             <Typography variant="h4">Address</Typography>
